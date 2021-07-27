@@ -30,6 +30,7 @@ void foo(T i)
 }
 int main(int argc, char const *argv[])
 {
+<<<<<<< HEAD
     // Working o;
     std::cout << "*** STARTS HERE ***"
               << "\n\n\n";
@@ -61,5 +62,10 @@ int main(int argc, char const *argv[])
     // std::cout << __PRETTY_FUNCTION__ <std::endl;
     foo<int>(10);
     foo<float>(3.14);
+=======
+    Working o;
+    o.hello();
+    
+>>>>>>> 7ee0204e9da86937d30b3dc9a8e7ae2d2921668b
     return 0;
 }
