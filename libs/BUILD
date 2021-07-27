@@ -7,3 +7,10 @@ cc_library(
     hdrs = ["helloworld.hpp"],
     visibility = ["//visibility:public"],
 )
+
+cc_library(
+    name = "enum_test",
+    srcs = ["enum_test.cpp"],
+    hdrs = ["enum_test.hpp"],
+    visibility = ["//visibility:public"],
+)
