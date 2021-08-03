@@ -1,71 +1,81 @@
 #include <iostream>
 // #include "libs/helloworld.hpp"
 // #include "libs/enum_test.hpp"
+#include "libs/MaestroDevice.hpp"
+unsigned int microsecond = 1000000;
 
+#include<unistd.h>
+using namespace pololu;
 
-// #define PKT_HEADER0 0
-// #define PKT_HEADER1 1
-// #define PKT_ID 2
-// #define PKT_LENGTH 3
-// #define PKT_INSTRUCTION 4
-// #define PKT_ERROR 4
-// #define PKT_PARAMETER0 5
-
-
-// /*Instruction for dxl protocol*/
-// #define INST_PING               1
-// #define INST_READ               2
-// #define INST_WRITE              3
-// #define INST_REG_WRITE          4
-// #define INST_ACTION             5
-
-
-
-template <typename T>
-void foo(T i)
-{
-    std::cout << " __func__  " << __func__ << std::endl;
-    std::cout << "__FUNCTION__   " << __FUNCTION__ << std::endl;
-    std::cout << "__PRETTY_FUNCTION__  " << __PRETTY_FUNCTION__ << std::endl << std::endl;
+void init_h(MaestroDevice device){
+  std::cout << "Init" <<std::endl;
+  unsigned short inits = 1456 * 4;
+  device.setTargetOnChannel(11, inits);
+  device.setTargetOnChannel(12, inits);
+  device.setTargetOnChannel(13, inits);
+  device.setTargetOnChannel(14, inits);
+  device.setTargetOnChannel(15, inits);
+  device.setTargetOnChannel(16, inits);
+  return;
 }
+
 int main(int argc, char const *argv[])
 {
-<<<<<<< HEAD
-    // Working o;
-    std::cout << "*** STARTS HERE ***"
-              << "\n\n\n";
+  std::cout << "***CODE ***" << std::endl;
+  DeviceOptions config18_left;
+  DeviceOptions config18_right;
 
-    // uint16_t address = 30;
-    // uint16_t length = 1;
-    // unsigned int val = 2048;
-    // uint8_t data[1] = {val}
-    // uint8_t *txpacket = (uint8_t *)malloc(length + 7);
+  MaestroDevice device18_left;
+  MaestroDevice device18_right;
+  config18_left = DeviceOptions(DeviceOptions::Type::MINI_24, DeviceOptions::Protocol::POLOLU, "/dev/serial/by-id/usb-Pololu_Corporation_Pololu_Mini_Maestro_18-Channel_USB_Servo_Controller_00230614-if00", 12);
+  config18_right = DeviceOptions(DeviceOptions::Type::MINI_18, DeviceOptions::Protocol::POLOLU, "/dev/serial/by-id/usb-Pololu_Corporation_Pololu_Mini_Maestro_18-Channel_USB_Servo_Controller_00230622-if00", 12);
+  device18_left = MaestroDevice(config18_left);
+  device18_right = MaestroDevice(config18_right);
 
-    // txpacket[PKT_ID] = 3;
-    // txpacket[PKT_LENGTH] = length + 3;
-    // txpacket[PKT_INSTRUCTION] = 3;
-    // txpacket[PKT_PARAMETER0] = (uint8_t)address;
+  device18_left.connect();
+  device18_right.connect();
+  // unsigned short vals = 1800;
 
-    // for (uint16_t s = 0; s < length; s++){
-    //     std::cout << "" << std::endl;
-    //     txpacket[PKT_PARAMETER0 + 1 + s] = data[s];
-    // }
-
-    // std::cout  << "TxPacket Contents" <<std::endl;
-    // for (uint8_t i = 0; i < length + 7; i++)
-    // {
-    //     std::cout << txpacket[i];
-    // }
-    // uint8_t val = 2000;
-    // uint8_t data[1] = {val};
-    // std::cout  << "Val  2000" << data[1] <<std::endl;
-    // std::cout << __PRETTY_FUNCTION__ <std::endl;
-    foo<int>(10);
-    foo<float>(3.14);
-=======
-    Working o;
-    o.hello();
+  unsigned short inits = 1456 * 4;
+  // for(unsigned short j = 4000 ;j < 8000; j+= 500){
     
->>>>>>> 7ee0204e9da86937d30b3dc9a8e7ae2d2921668b
-    return 0;
+  //   device18_left.setTargetOnChannel(11, j);
+  //    usleep(1 * microsecond); //sleep for 2 sec
+  //     }//11
+  device18_left.setTargetOnChannel(11, inits);
+  // device18_left.setTargetOnChannel(12, inits); //12
+  // device18_left.setTargetOnChannel(13, inits); //13
+  // device18_left.setTargetOnChannel(14, inits); //14
+  // device18_left.setTargetOnChannel(15, inits); //15
+  // device18_left.setTargetOnChannel(16, inits); //16
+
+
+
+  // device18_right.setTargetOnChannel(11, inits); //11
+  //  for(unsigned short i = 4000 ;i < 8000; i= i + 500){
+    
+  device18_right.setTargetOnChannel(11, inits);
+  //    usleep(1 * microsecond); //sleep for 2 sec
+  //     }//11
+  // device18_right.setTargetOnChannel(12, inits); //12
+  // device18_right.setTargetOnChannel(13, inits); //13
+  // device18_right.setTargetOnChannel(14, inits); //14
+  // device18_right.setTargetOnChannel(15, inits); //15
+  // device18_right.setTargetOnChannel(16, inits); //16
+
+  // init_h(device18_left);
+  // init_h(device18_right);
+
+  u_short position = 0;
+  device18_left.getPositionOnChannel(11,position);
+  std::cout << "POSITION LEFT" << position << "\n"; 
+  device18_right.getPositionOnChannel(11,position);
+  std::cout << "POSITION RIGHT" << position << "\n";
+  
+
+
+
+  device18_left.disconnect();
+  device18_right.disconnect();
+  return 0;
 }

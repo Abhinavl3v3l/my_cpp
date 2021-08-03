@@ -14,3 +14,10 @@ cc_library(
     hdrs = ["enum_test.hpp"],
     visibility = ["//visibility:public"],
 )
+
+cc_library(
+    name = "maestro",
+    srcs = ["MaestroDevice.cpp"],
+    hdrs = ["MaestroDevice.hpp","DeviceOptions.hpp"],
+    visibility = ["//visibility:public"],
+)
