@@ -1,0 +1,16 @@
+// int cut = 7 ; 
+// for (auto l:links){
+//   std::cout << l <<std::endl;
+// }
+
+
+// std::vector<std::string> split_lo(links.begin(), links.begin() + cut);
+// std::vector<std::string> split_hi(links.begin() + cut, links.end());
+
+// for(auto low:split_lo){
+//   std::cout << low ; 
+// }
+
+// for(auto low:split_hi){
+//   std::cout << low ; 
+// }
