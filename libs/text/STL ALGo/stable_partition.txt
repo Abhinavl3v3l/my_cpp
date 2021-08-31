@@ -1,0 +1,35 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <typeinfo>
+#include <numeric>
+#include <algorithm>
+#include <typeinfo>
+
+bool odd(int i) { return i % 2 == 1; }
+int main(int argc, char const *argv[])
+{
+
+	std::vector<int> a{1, 2, 3, 4, 5, 6, 7, 8, 9};
+	std::cout << "\nBefore" << '\n';
+	for (auto i : a)
+	{
+		std::cout << i << " ";
+	}
+
+	//Stable partition makes changes to vector in place, 
+	// value placed in condition/function call is place after  bound
+	// n>5 will replace 
+	// [1, 2, 3, 4, 5, 6, 7, 8, 9] to [ 6, 7, 8, 9, 1, 2, 3, 4, 5]
+	//Returns Iterator at 1's place in second vector.
+
+	std::vector<int>::iterator cutoff = std::stable_partition(a.begin(), a.end(), [](int n)
+															  { return n > 5; });
+
+	std::cout << "\nAfter" << '\n';
+	for (std::vector<int>::iterator it = cutoff; it != a.end(); it++)
+	{
+		std::cout << *it << " ";
+	}
+	return 0;
+}

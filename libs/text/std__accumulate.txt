@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <typeinfo>
+#include <numeric>
+#include <algorithm>
+#include <typeinfo>
+#include <bits/stdc++.h>
+int my_func(int x, int y){
+		return x * y;
+
+}
+int main(int argc, char const *argv[])
+{	
+	std::vector<int> v(10, 2);
+
+	 
+    const auto sum = [](std::vector<int> container){
+		return std::accumulate(container.begin(), container.end(),1, my_func);
+	};
+	std::cout << sum(v)<<'\n';
+	std::cout << pow(2,10)<<'\n'; 
+	std::cout << pow(4,10)<<'\n';
+	return 0;
+}
