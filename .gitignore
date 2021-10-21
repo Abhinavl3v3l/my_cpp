@@ -56,3 +56,9 @@
 .bazelversion
 # User-specific .bazelrc
 user.bazelrc
+
+# CMake
+cmake-build-debug
+cmake*
+CMakeLists.txt
+Cmake*

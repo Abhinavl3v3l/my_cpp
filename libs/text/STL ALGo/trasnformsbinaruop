@@ -1,0 +1,83 @@
+#include <iostream>
+#include <utility>
+#include <vector>
+#include <string>
+#include <typeinfo>
+#include <numeric>
+#include <algorithm>
+#include <typeinfo>
+#include <bits/stdc++.h>
+#include <functional>
+//#include "yaml-cpp/yaml.h"
+
+// template<typename FIT, typename SIT, typename STO>
+// void fun(
+//         FIT first,
+//         SIT second,
+//         STO storage,
+//         std::function<std::pair()> f,
+//         ){
+//         std::transform( std::begin(first), std::end(first),
+//                         std::begin(second),
+//                         std::inserter(storage, std::begin(storage)),
+//                         f);
+//     return;
+// }
+
+std::pair<std::pair<std::string, std::string>, float>
+get_key_pairsss(
+    std::pair<std::string, std::string> pair, float value)
+{
+    return std::make_pair(pair, value);
+}
+
+std::pair<
+    std::string, std::string>
+get_key_pair(
+    std::string key1,
+    std::string key2)
+{
+    return std::make_pair(key1, key2);
+}
+
+
+
+// [](std::pair<std::string,std::string> pair,  float value) { return std::make_pair(pair, value); });
+//  [](std::string key, std::string keyss) { return std::make_paypename T, ir(key, keyss); });
+int main(int argc, char const *argv[])
+{
+    std::vector<std::string> key = {"a", "b", "c"};
+    std::vector<std::string> keyss = {"d", "e", "f"};
+    std::vector<std::pair<std::string, std::string>> key_pairsss;
+    std::vector<float> value = {1, 2, 3};
+    std::map<std::pair<std::string, std::string>, float> new_map;
+    for (auto k : key)
+    {
+        std::cout << k << " "
+                  << "\n";
+    }
+
+    // Make  Pair of Keys
+    std::transform(std::begin(key),
+                   std::end(key),
+                   std::begin(keyss),
+                   std::inserter(key_pairsss, std::begin(key_pairsss)),
+                   get_key_pair);
+
+    // fun(key, keyss, key_pairsss, &get_key_pair );
+
+    //make map of pair as key and value
+    std::transform(std::begin(key_pairsss),
+                   std::end(key_pairsss),
+                   std::begin(value),
+                   std::inserter(new_map, std::begin(new_map)),
+                   get_key_pairsss);
+
+    for (auto mi : new_map)
+    {
+        std::cout << "{ " << mi.first.first << ", " << mi.first.second << " }"
+                  << " : " << mi.second << '\n';
+    }
+
+    return 0;
+}

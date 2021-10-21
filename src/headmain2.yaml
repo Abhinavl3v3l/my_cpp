@@ -1,0 +1,442 @@
+motors:
+  NeckRotation:
+    group: Neck
+    max: 1533
+    min: 2551
+    hardware: dynamixel
+    init: 2099
+    motor_id: 0
+    name: NeckRotation
+    acceleration: 0.10000000000000001
+    speed: 0.3
+  LowerGimbalRight:
+    group: Neck
+    hardware: dynamixel
+    init: 2540
+    labelleft: LowerGimbalRight
+    max: 1207
+    min: 2540
+    motor_id: 1
+    name: LowerGimbalRight
+    acceleration: 0.10000000000000001
+    speed: 0.3
+  LowerGimbalLeft:
+    group: Neck
+    hardware: dynamixel
+    init: 2054
+    max: 2929
+    min: 1406
+    motor_id: 2
+    name: LowerGimbalLeft
+    acceleration: 0.10000000000000001
+    speed: 0.3
+  UpperGimbalRight:
+    group: Head
+    acceleration: 0.10000000000000001
+    hardware: dynamixel
+    init: 1993
+    min: 1687
+    max: 2597
+    motor_id: 3
+    name: UpperGimbalRight
+    speed: 0.29999999999999999
+  UpperGimbalLeft:
+    group: Head
+    acceleration: 0.1
+    hardware: dynamixel
+    init: 1994
+    min: 1607
+    max: 2315
+    motor_id: 4
+    name: UpperGimbalLeft
+    speed: 0.3
+  SmileRight:
+    group: Head
+    acceleration: 0.1
+    hardware: dynamixel
+    init: 2236
+    min: 1262
+    max: 2236
+    motor_id: 5
+    name: SmileRight
+    speed: 0.3
+  SmileLeft:
+    group: Head
+    acceleration: 0.1
+    hardware: dynamixel
+    init: 1649
+    min: 1649
+    max: 2989
+    motor_id: 6
+    name: SmileLeft
+    speed: 0.3
+  Jaw:
+    group: Head
+    acceleration: 0.1
+    hardware: dynamixel
+    init: 2290
+    min: 1959
+    max: 2290
+    motor_id: 7
+    name: Jaw
+    speed: 0.3
+  DUMMY_P24_0:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1622
+    min: 1647
+    max: 2597
+    motor_id: 0
+    name: DUMMY_P24_0
+    speed: 0.3
+  BrowInnerLeft:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1500
+    min: 998
+    max: 1978
+    motor_id: 1
+    name: BrowInnerLeft
+    speed: 0.3
+  UpperLipCenter:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1677
+    min: 1500
+    max: 1987
+    motor_id: 2
+    name: UpperLipCenter
+    speed: 0.3
+  CheekSquintRight:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1582
+    min: 1582
+    max: 2000
+    motor_id: 3
+    name: CheekSquintRight
+    speed: 0.3
+  BrowCenter:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1500
+    min: 800
+    max: 2200
+    motor_id: 4
+    name: BrowCenter
+    speed: 0.3
+  BrowInnerRight:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1687
+    min: 1192
+    max: 2337
+    motor_id: 5
+    name: BrowInnerRight
+    speed: 0.3
+  BrowOuterLeft:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1434
+    min: 1050
+    max: 2234
+    motor_id: 6
+    name: BrowOuterLeft
+    speed: 0.3
+  EyesUpDown:
+    group: Head
+    acceleration: 0
+    hardware: pololu24
+    init: 1438
+    min: 1138
+    max: 1806
+    motor_id: 7
+    name: EyesUpDown
+    speed: 0.3
+  UpperLipRight:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1512
+    min: 1400
+    max: 1846
+    motor_id: 8
+    name: UpperLipRight
+    speed: 0.3
+  BrowOuterRight:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1591
+    min: 891
+    max: 1991
+    motor_id: 9
+    name: BrowOuterRight
+    speed: 0.3
+  UpperLipLeft:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1504
+    min: 1164
+    max: 1744
+    motor_id: 10
+    name: UpperLipLeft
+    speed: 0.3
+  CheekSquintLeft:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1260
+    min: 460
+    max: 1260
+    motor_id: 11
+    name: CheekSquintLeft
+    speed: 0.3
+  SneerLeft:
+    group: Head
+    acceleration: 0
+    hardware: pololu24
+    init: 1640
+    min: 1640
+    max: 2490
+    motor_id: 12
+    name: SneerLeft
+    speed: 0.3
+  SneerRight:
+    group: Head
+    acceleration: 0
+    hardware: pololu24
+    init: 1421
+    min: 521
+    max: 1421
+    motor_id: 13
+    name: SneerRight
+    speed: 0.3
+  LowerLipLeft:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1305
+    min: 951
+    max: 1744
+    motor_id: 14
+    name: LowerLipLeft
+    speed: 0.3
+  LowerLipCenter:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1500
+    min: 1396
+    max: 1796
+    motor_id: 15
+    name: LowerLipCenter
+    speed: 0.3
+  FrownLeft:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1359
+    min: 879
+    max: 1359
+    motor_id: 16
+    name: FrownLeft
+    speed: 0.3
+  LowerLipRight:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1512
+    min: 1177
+    max: 1698
+    motor_id: 17
+    name: LowerLipRight
+    speed: 0.3
+  FrownRight:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1169
+    motor_id: 18
+    min: 1169
+    max: 1569
+    name: FrownRight
+    speed: 0.3
+  LipsStretchRight:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1343
+    min: 1173
+    max: 1673
+    motor_id: 19
+    name: LipsStretchRight
+    speed: 0.3
+  LipsStretchLeft:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1471
+    min: 1191
+    max: 1675
+    motor_id: 20
+    name: LipsStretchLeft
+    speed: 0.3
+  Tongue:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 1442
+    min: 1442
+    max: 1692
+    motor_id: 21
+    name: Tongue
+    speed: 0.3
+  DUMMY_P24_22:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 4000
+    min: 1647
+    max: 2597
+    motor_id: 22
+    name: DUMMY_P24_22
+    speed: 0.3
+  DUMMY_P24_23:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu24
+    init: 4000
+    min: 1647
+    max: 2597
+    motor_id: 23
+    name: DUMMY_P24_23
+    speed: 0.3
+  DUMMY_P12_0:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu12
+    init: 4000
+    min: 1647
+    max: 2597
+    motor_id: 0
+    name: DUMMY_P12_0
+    speed: 0.3
+  DUMMY_P12_1:
+    group: Head
+    acceleration: 0.1
+    hardware: pololu12
+    init: 4000
+    min: 1647
+    max: 2597
+    motor_id: 0
+    name: DUMMY_P12_1
+    speed: 0.3
+  LowerLidLeft:
+    group: Head
+    acceleration: 0
+    hardware: pololu12
+    init: 1309
+    min: 1041
+    max: 1617
+    motor_id: 2
+    name: LowerLidLeft
+    speed: 0.3
+  EyeTurnRight:
+    group: Head
+    acceleration: 0
+    hardware: pololu12
+    init: 1496
+    min: 1264
+    max: 1736
+    motor_id: 3
+    name: EyeTurnRight
+    speed: 0.3
+  UpperLidLeft:
+    group: Head
+    acceleration: 0
+    hardware: pololu12
+    init: 1256
+    min: 1026
+    max: 1836
+    motor_id: 4
+    name: UpperLidLeft
+    speed: 0.3
+  UpperLidRight:
+    group: Head
+    acceleration: 0
+    hardware: pololu12
+    init: 1628
+    min: 1084
+    max: 1789
+    motor_id: 5
+    name: UpperLidRight
+    speed: 0.3
+  LowerLidRight:
+    group: Head
+    acceleration: 0
+    hardware: pololu12
+    init: 1701
+    min: 1485
+    max: 1870
+    motor_id: 6
+    name: LowerLidRight
+    speed: 0.3
+  EyeTurnLeft:
+    group: Head
+    acceleration: 0
+    hardware: pololu12
+    init: 1595
+    min: 1373
+    max: 1875
+    motor_id: 7
+    name: EyeTurnLeft
+    speed: 0.3
+  DUMMY_P12_8:
+    group: Head
+    acceleration: 0
+    hardware: pololu12
+    init: 1519
+    min: 1647
+    max: 2597
+    motor_id: 8
+    name: DUMMY_P12_8
+    speed: 0.3
+  DUMMY_P12_9:
+    group: Head
+    acceleration: 0
+    hardware: pololu12
+    init: 1519
+    min: 1647
+    max: 2597
+    motor_id: 9
+    name: DUMMY_P12_9
+    speed: 0.3
+  DUMMY_P12_10:
+    group: Head
+    acceleration: 0
+    hardware: pololu12
+    init: 1519
+    min: 1647
+    max: 2597
+    motor_id: 10
+    name: DUMMY_P12_10
+    speed: 0.3
+  DUMMY_P12_11:
+    group: Head
+    acceleration: 0
+    hardware: pololu12
+    init: 1519
+    min: 1647
+    max: 2597
+    motor_id: 11
+    name: DUMMY_P12_11
+    speed: 0.3

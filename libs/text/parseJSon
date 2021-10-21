@@ -1,0 +1,78 @@
+#include <iostream>
+#include <utility>
+#include <vector>
+#include <string>
+#include <typeinfo>
+#include <numeric>
+#include <algorithm>
+#include <typeinfo>
+#include <bits/stdc++.h>
+#include <functional>
+
+#include "libs/nlohmann/json.hpp"
+
+
+int main(int argc, char const *argv[]) {
+
+    std::ifstream ifs("/home/mrobotics2/workspace/academia/my_cpp/files/config.json");
+    nlohmann::json jf = nlohmann::json::parse(ifs);
+
+//    nlohmann::json config;
+
+
+    for(const auto& items: jf.items()){
+//        std::cout << "items keys" << items.key() << '\n';
+        for(const auto& items2:items.value().items()) {
+            if ((items2.key().compare("rows")) == 0) {
+//            std::cout << "items2 keys" << items2.key() << '\n';
+                for (const auto &items3: items2.value().items()) {
+//                std::cout << "items3 keys" << items3.key() << '\n';
+                    for (const auto &items4: items3.value().items()) {
+                        std::cout << items4.key() << " : " << items4.value()["name"].get<std::string>() << '\n';
+                        std::cout << items4.value()["name"].get<std::string>() << '\n';
+                        std::cout << items4.value()["hardware"] << '\n';
+                        std::cout << items4.value()["init"].get<int>() << '\n';
+                        std::cout << items4.value()["min"].get<int>() << '\n';
+                        std::cout << items4.value()["max"].get<int>() << '\n';
+                        std::cout << items4.value()["motor_id"].get<uint16_t>() << '\n';
+                    }
+                }
+            }
+        }
+    }
+//
+//    for (const auto &items: jf.items()) {
+//        for (const auto &items2: items.value().items()) {
+//            std::string strr = items2.key();
+//            if ((strr.compare("rows")) == 0) {
+//                std::cout << "VALUE OF KEY : " << strr <<'\n';
+//                config = items2.value();
+//            }
+//            else{
+//                //Error wrong key/file
+//            }
+//        }
+//    }
+//
+//
+//    nlohmann::json head_config;
+//    for(const auto & items:config.items()) {
+//        std::cout << items.key() << '\n';
+//        if(items.key() == "Head"){
+//            head_config = items.value();
+//        }
+//    }
+//
+//    for(const auto& items:head_config.items()){
+//        std::cout << items.value()["name"].get<std::string>() << '\n';
+//        std::cout << items.value()["hardware"].get<std::string>() << '\n';
+//        std::cout << items.value()["init"].get<int>() << '\n';
+//        std::cout << items.value()["min"].get<int>() << '\n';
+//        std::cout << items.value()["max"].get<int>() << '\n';
+//        std::cout << items.value()["motor_id"].get<uint16_t>() << '\n';
+//
+//        std::cout <<'\n';
+//    }
+
+
+}

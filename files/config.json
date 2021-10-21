@@ -1,0 +1,577 @@
+{
+    "data": {
+        "headers": {
+            "Arms": [
+                {
+                    "key": "group",
+                    "title": "group"
+                },
+                {
+                    "key": "hardware",
+                    "title": "hardware"
+                },
+                {
+                    "key": "init",
+                    "title": "init"
+                },
+                {
+                    "key": "max",
+                    "title": "max"
+                },
+                {
+                    "key": "min",
+                    "title": "min"
+                },
+                {
+                    "key": "motor_id",
+                    "title": "motor_id"
+                },
+                {
+                    "key": "name",
+                    "title": "name"
+                }
+            ],
+            "Head": [
+                {
+                    "key": "group",
+                    "title": "group"
+                },
+                {
+                    "key": "acceleration",
+                    "title": "acceleration"
+                },
+                {
+                    "key": "hardware",
+                    "title": "hardware"
+                },
+                {
+                    "key": "init",
+                    "title": "init"
+                },
+                {
+                    "key": "min",
+                    "title": "min"
+                },
+                {
+                    "key": "max",
+                    "title": "max"
+                },
+                {
+                    "key": "motor_id",
+                    "title": "motor_id"
+                },
+                {
+                    "key": "name",
+                    "title": "name"
+                },
+                {
+                    "key": "speed",
+                    "title": "speed"
+                }
+            ]
+        },
+        "rows": {
+            "Arms": [
+                {
+                    "group": "LeftArm",
+                    "hardware": "dynamixel",
+                    "init": 1764,
+                    "max": 4092,
+                    "min": 1349,
+                    "motor_id": 15,
+                    "name": "LeftElbowPitch"
+                },
+                {
+                    "group": "LeftArm",
+                    "hardware": "dynamixel",
+                    "init": 2129,
+                    "max": 3859,
+                    "min": 198,
+                    "motor_id": 17,
+                    "name": "LeftElbowYaw"
+                },
+                {
+                    "group": "LeftArm",
+                    "hardware": "dynamixel",
+                    "init": 1875,
+                    "max": 2967,
+                    "min": 450,
+                    "motor_id": 9,
+                    "name": "LeftShoulderPitch"
+                },
+                {
+                    "group": "LeftArm",
+                    "hardware": "dynamixel",
+                    "init": 828,
+                    "max": 2552,
+                    "min": 724,
+                    "motor_id": 11,
+                    "name": "LeftShoulderRoll"
+                },
+                {
+                    "group": "LeftArm",
+                    "hardware": "dynamixel",
+                    "init": 1966,
+                    "max": 3480,
+                    "min": 750,
+                    "motor_id": 13,
+                    "name": "LeftShoulderYaw"
+                }
+            ],
+            "Head": [
+                {
+                    "acceleration": 23,
+                    "group": "Head",
+                    "hardware": "dynamixel",
+                    "init": 1234,
+                    "max": 1234,
+                    "min": 1234,
+                    "motor_id": 3,
+                    "name": "UpperGimbalRight",
+                    "speed": 0.6
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "dynamixel",
+                    "init": 1994,
+                    "max": 2325,
+                    "min": 1607,
+                    "motor_id": 4,
+                    "name": "UpperGimbalLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "dynamixel",
+                    "init": 3710,
+                    "max": 2236,
+                    "min": 1262,
+                    "motor_id": 5,
+                    "name": "SmileRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "dynamixel",
+                    "init": 910,
+                    "max": 2989,
+                    "min": 1649,
+                    "motor_id": 6,
+                    "name": "SmileLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "dynamixel",
+                    "init": 2368,
+                    "max": 2290,
+                    "min": 1959,
+                    "motor_id": 7,
+                    "name": "Jaw",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1622,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 1,
+                    "name": "DUMMY_P24_0",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1630,
+                    "max": 9216,
+                    "min": 3200,
+                    "motor_id": 1,
+                    "name": "BrowInnerLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1630,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 2,
+                    "name": "UpperLipCenter",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1322,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 3,
+                    "name": "CheekSquintRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1507,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 4,
+                    "name": "BrowCenter",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1568,
+                    "max": 9215,
+                    "min": 3000,
+                    "motor_id": 5,
+                    "name": "BrowInnerRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1811,
+                    "max": 9216,
+                    "min": 3200,
+                    "motor_id": 6,
+                    "name": "BrowOuterLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1397,
+                    "max": 8000,
+                    "min": 3968,
+                    "motor_id": 7,
+                    "name": "EyesUpDown",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1539,
+                    "max": 8000,
+                    "min": 3968,
+                    "motor_id": 8,
+                    "name": "UpperLipRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1505,
+                    "max": 9216,
+                    "min": 3200,
+                    "motor_id": 9,
+                    "name": "BrowOuterRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1453,
+                    "max": 9216,
+                    "min": 3968,
+                    "motor_id": 10,
+                    "name": "UpperLipLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1696,
+                    "max": 8000,
+                    "min": 3968,
+                    "motor_id": 11,
+                    "name": "CheekSquintLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1001,
+                    "max": 8000,
+                    "min": 3968,
+                    "motor_id": 12,
+                    "name": "SneerLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1752,
+                    "max": 8000,
+                    "min": 3968,
+                    "motor_id": 13,
+                    "name": "SneerRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1745,
+                    "max": 9216,
+                    "min": 3200,
+                    "motor_id": 14,
+                    "name": "LowerLipLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1526,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 15,
+                    "name": "LowerLipCenter",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1378,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 16,
+                    "name": "FrownLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1306,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 17,
+                    "name": "LowerLipRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1547,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 18,
+                    "name": "FrownRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1414,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 19,
+                    "name": "LipsStretchRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 1601,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 20,
+                    "name": "LipsStretchLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 4000,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 21,
+                    "name": "Tongue",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 4000,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 21,
+                    "name": "DUMMY_P24_22",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu24",
+                    "init": 4000,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 21,
+                    "name": "DUMMY_P24_23",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 4000,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 0,
+                    "name": "DUMMY_P12_0",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0.1,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 4000,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 0,
+                    "name": "DUMMY_P12_1",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 1210,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 2,
+                    "name": "LowerLidLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 1476,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 3,
+                    "name": "EyeTurnRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 1392,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 4,
+                    "name": "UpperLidLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 1674,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 5,
+                    "name": "UpperLidRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 1929,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 6,
+                    "name": "LowerLidRight",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 1519,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 7,
+                    "name": "EyeTurnLeft",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 1519,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 8,
+                    "name": "DUMMY_P12_8",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 1519,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 9,
+                    "name": "DUMMY_P12_9",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 1519,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 10,
+                    "name": "DUMMY_P12_10",
+                    "speed": 0.3
+                },
+                {
+                    "acceleration": 0,
+                    "group": "Head",
+                    "hardware": "pololu12",
+                    "init": 1519,
+                    "max": 2597,
+                    "min": 1647,
+                    "motor_id": 11,
+                    "name": "DUMMY_P12_11",
+                    "speed": 0.3
+                }
+            ]
+        }
+    },
+    "type": "settings"
+}
