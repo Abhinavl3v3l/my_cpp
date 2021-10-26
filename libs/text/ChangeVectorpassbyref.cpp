@@ -26,18 +26,18 @@ private:
 };
 
 void fun(std::vector<int> &v)
-{ // SAVE
-	for (auto &it : v)
+{//SAVE
+	for (auto& it: v)
 	{
-		it = it + 1;
+		it = it +1;
 	}
 }
 
 void fun2(std::vector<int> &v)
-{ // SAVE
-	for (auto &it : v)
+{//SAVE
+	for (auto& it: v)
 	{
-		it = it - 1;
+		it = it -1;
 	}
 }
 
@@ -45,15 +45,35 @@ int main(int argc, char const *argv[])
 {
 	auto start = std::chrono::steady_clock::now();
 
-	std::vector<int> a ={0 ,2 ,2, 2, 4, 5 ,6 ,6 ,7, 6 };
-	std::vector<int> b = {0 ,0, 1, 2, 3, 5, 5 ,6, 8, 9};
-	std::vector<int> res;
+	std::vector<int> servo_id = {0, 1, 2, 3, 4, 5, 6, 7};
 
-	for (size_t i =0;i< a.size();i++)
+	// dynamixel bulk read
+	/**
+	 * 	1. A function that expects list of objects containing info
+	 *  	as what id, register and size of register to read.
+	 * 	2. Dynamixel Driver should loop through objects and get
+	 * 		necessary properties to add param
+	 * 	3. Then read from dynamixel
+	 * 	4. Save the read data to the object
+	 *
+	 */
+	for (auto &it : servo_id)
 	{
-		std::cout << a[i] <<" " <<b[i]<< " ";
+		std::cout << " " << it ;
 	}
-	
+	fun(servo_id); // INSTEAD OF PASSING IT VIA REF LET LOOP in line 30 and 38 be looped by ref :)
+	std::cout << "\n" ;
+	for (auto &it : servo_id)
+	{
+		std::cout << " " << it ;
+	}
+	fun2(servo_id); 
+	std::cout << "\n" ;
+
+	for (auto &it : servo_id)
+	{
+		std::cout << " " << it ;
+	}
 	auto end = std::chrono::steady_clock::now();
 	std::chrono::duration<double> elapsed_seconds = end - start;
 	std::cout << "\n \n Elapsed time: " << std::chrono::duration<double>(elapsed_seconds).count() << "s\n";
